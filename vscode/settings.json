@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "formulahendry.code-runner",
+    "adpyke.codesnap",
+    "ms-azuretools.vscode-docker",
+    "dracula-theme.theme-dracula",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.live-server",
+    "ritwickdey.LiveServer",
+    "pkief.material-icon-theme",
+    "azimson.vscode-one-monokai",
+    "onecentlin.php-awesome",
+    "felixfbecker.php-intellisense",
+    "esbenp.prettier-vscode",
+    "rangav.vscode-thunder-client"
+  ]
+}
