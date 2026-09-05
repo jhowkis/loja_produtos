@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#">
+            <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logotipo da Empresa">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Catálogo de Produtos</h2>
+
+        <section>
+            <article>
+                <figure>
+                    <img src="imagem-produto1.jpg" alt="Imagem do Produto 1" loading="lazy">
+                    <figcaption>
+                        Produto 1
+
+                    </figcaption>
+                </figure>
+                <h3>Produto 1</h3>
+                <p>Preço: R$ 99,90</p>
+                <a href="contato.html">Comprar</a>
+                <button onclick="meuModal.showModal()">
+                    Comprar
+                </button>
+                <dialog id="meuModal">
+                    <h3>Em construção</h3>
+                    <p>Aguarde as aulas de PHP e JavaScript</p>
+
+                    <!-- Formulário fecha o modal sem JS -->
+                    <form method="dialog">
+                        <button>Fechar</button>
+                    </form>
+                </dialog>
+
+            </article>
+
+            <article>
+                <img src="imagem-produto2.jpg" alt="Imagem do Produto 2">
+                <h3>Produto 2</h3>
+                <p>Preço: R$ 149,90</p>
+                <a href="contato.html">Mais Detalhes</a>
+            </article>
+
+            <article>
+                <img src="imagem-produto3.jpg" alt="Imagem do Produto 3">
+                <h3>Produto 3</h3>
+                <p>Preço: R$ 79,90</p>
+                <a href="contato.html">Comprar</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- 5. Rodapé -->
+    <footer id="contato">
+        <div>
+            <h3>Contato</h3>
+            <p>E-mail: contato@empresa.com</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <p>Endereço: Av. Principal, 100 - São Paulo, SP</p>
+        </div>
+
+        <div>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; 2026 Store Beautiful. Todos os direitos reservados
+    </footer>
+
+</body>
+
+</html>
