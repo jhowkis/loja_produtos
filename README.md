@@ -135,7 +135,7 @@ Centraliza o atendimento e informações operacionais da empresa:
 
 ## 📷 Créditos de Mídia
 
-- **Imagens dos Produtos:** Obtidas gratuitamente em alta resolução no [PxHere](https://pxhere.com/pt/photo/634760).
+- **Imagens dos Produtos:** Obtidas gratuitamente em alta resolução no [PxHere](https://pxhere.com).
 - **Ícones e Favicon:** Estruturado com suporte a Web App Manifest.
 
 ---
