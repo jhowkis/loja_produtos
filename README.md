@@ -84,12 +84,14 @@ meu-primeiro-site/
 
 1. **Clonar ou Baixar o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/meu-primeiro-site.git
+   git clone https://github.com/jhowkis/loja_produtos.git
    ```
 2. **Abrir no Navegador:**
    Navegue até a pasta do projeto e abra o arquivo `index.html` diretamente em qualquer navegador moderno (Google Chrome, Firefox, Edge, Safari).
 3. **Servidor Local (Opcional):**
    Caso esteja utilizando o Visual Studio Code, recomenda-se a extensão **Live Server** para recarregamento automático das páginas durante alterações.
+4. **Servidor GITHUB em pages**
+   https://jhowkis.github.io/loja_produtos/
 
 ---
 
