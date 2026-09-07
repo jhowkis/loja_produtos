@@ -110,8 +110,8 @@ Centraliza o atendimento e informações operacionais da empresa:
 | :----------: | :-------------- | :------------------------------------------------------ | :----------: | :-------------: |
 | `#Produto01` | **Produto 1**   | Perfume de alta qualidade com fragrância duradoura      | **R$ 99,90** | Modal de Compra |
 | `#Produto02` | **Produto 2**   | Maquiagem de alta qualidade com acabamento duradouro    | **R$ 39,90** | Modal de Compra |
-| `#Produto03` | **Produto 3**   | Perfume tropical com fragrância intensa                 | **R$ 49,90** | Modal de Compra |
-| `#Produto04` | **Produto 4**   | Perfume amadeirado com notas sofisticadas               | **R$ 59,90** | Modal de Compra |
+| `#Produto03` | **Produto 3**   | Perfume tropical com fragrância intensa                 | **R$ 79,90** | Modal de Compra |
+| `#Produto04` | **Produto 4**   | Perfume amadeirado com notas sofisticadas               | **R$ 89,90** | Modal de Compra |
 | `#Produto05` | **Produto 5**   | Loção corporal hidratante com aroma suave e refrescante | **R$ 69,90** | Modal de Compra |
 
 ---
