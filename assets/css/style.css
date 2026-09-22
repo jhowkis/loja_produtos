@@ -268,3 +268,34 @@ h6 {
   color: var(--cor-texto-claro) !important;
   box-shadow: 0 4px 10px rgba(51, 35, 110, 0.25);
 }
+/* --------------------------------------------------------------------------
+   Indicadores do Carrossel (Bolinhas Elegantes)
+   -------------------------------------------------------------------------- */
+.carousel-indicators {
+  margin-bottom: -1rem;
+}
+
+/* Reset dos estilos padrão do Bootstrap */
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 5px !important;
+  background-color: var(--cor-primaria) !important;
+  opacity: 0.25 !important;
+  transition: all 0.3s ease-in-out !important;
+  box-sizing: border-box !important;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  opacity: 0.6 !important;
+}
+
+/* Indicador Ativo (Pill suave) */
+.carousel-indicators .active {
+  width: 26px !important;
+  border-radius: 12px !important;
+  opacity: 1 !important;
+}
