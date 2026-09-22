@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Beautiful - Início</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS de Cores, Tipografia e Estilos Customizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logótipo e Nome da Loja -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logótipo da Empresa" height="40"
+                    class="me-2">
+                <span class="fw-bold text-white">Store Beautiful</span>
+            </a>
+
+            <!-- Botão Menu Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <!-- Menu do Lado Esquerdo (com a guia Produtos) -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Menu do Lado Direito -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quero Me Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrar</a>
+                    </li>
+                    <!-- Ícone do Carrinho com Badge perfeitamente colada -->
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link d-inline-flex align-items-center" href="#" aria-label="Carrinho de Compras">
+                            <div class="cart-icon-wrapper">
+                                <i class="bi bi-cart3 fs-4"></i>
+                                <span class="cart-badge">5</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal - Trocas e Devoluções -->
+    <main class="container my-5">
+
+        <!-- Hero Section / Banner -->
+        <section class="hero-section text-center p-5 rounded-4 shadow mb-5">
+            <h1 class="display-4 fw-bold">Trocas e Devoluções</h1>
+            <p class="lead my-3 fs-5">
+                Sua satisfação é nossa prioridade. Confira nossas diretrizes para realizar sua solicitação de forma
+                rápida e transparente.
+            </p>
+        </section>
+
+        <!-- Destaques / Resumo das Regras -->
+        <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+                    <div class="fs-1 text-primary mb-3">
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">7 Dias para Arrependimento</h3>
+                    <p class="text-muted mb-0">Você tem até 7 dias corridos após o recebimento para devolver o produto
+                        por desistência ou arrependimento.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+                    <div class="fs-1 text-primary mb-3">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">30 Dias por Defeito</h3>
+                    <p class="text-muted mb-0">Caso o produto apresente algum defeito de fabricação, realizamos a troca
+                        ou devolução em até 30 dias.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+                    <div class="fs-1 text-primary mb-3">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Primeira Troca Grátis</h3>
+                    <p class="text-muted mb-0">O custo do frete do envio de devolução da primeira troca é por nossa
+                        conta via código de postagem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Passo a Passo -->
+        <section class="my-5 py-3">
+            <h2 class="text-center fw-bold mb-4">Como Solicitar a Troca ou Devolução</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-3 text-center">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <span class="badge rounded-circle bg-primary fs-5 mb-3"
+                            style="width: 40px; height: 40px; line-height: 28px;">1</span>
+                        <h4 class="h6 fw-bold">Entre em Contato</h4>
+                        <p class="text-muted small mb-0">Envie um e-mail para <strong>contato@empresa.com</strong>
+                            informando o número do pedido e motivo.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <span class="badge rounded-circle bg-primary fs-5 mb-3"
+                            style="width: 40px; height: 40px; line-height: 28px;">2</span>
+                        <h4 class="h6 fw-bold">Receba a Autorização</h4>
+                        <p class="text-muted small mb-0">Analisaremos seu pedido e enviaremos o código de postagem
+                            gratuita dos Correios.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <span class="badge rounded-circle bg-primary fs-5 mb-3"
+                            style="width: 40px; height: 40px; line-height: 28px;">3</span>
+                        <h4 class="h6 fw-bold">Envie o Produto</h4>
+                        <p class="text-muted small mb-0">Embal do produto com a Nota Fiscal e post na agência dos
+                            Correios mais próxima.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <span class="badge rounded-circle bg-primary fs-5 mb-3"
+                            style="width: 40px; height: 40px; line-height: 28px;">4</span>
+                        <h4 class="h6 fw-bold">Conclusão</h4>
+                        <p class="text-muted small mb-0">Após a triagem, enviamos o novo item ou efetuamos o reembolso
+                            em até 5 dias úteis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regras e Condições (Accordion Bootstrap) -->
+        <section class="my-5">
+            <h2 class="text-center fw-bold mb-4">Condições Gerais</h2>
+            <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionPoliticas">
+
+                <div class="accordion-item border-0 border-bottom">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-semibold fs-6" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Condições do Produto para Troca ou Devolução
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionPoliticas">
+                        <div class="accordion-body text-muted">
+                            Para que a troca ou devolução seja aceita, o produto deve ser devolvido sem indícios de uso,
+                            na embalagem original, acompanhado de todos os seus acessórios e com a Nota Fiscal de
+                            compra. Produtos abertos, violados ou com sinais de uso inapropriado não serão aceitos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0 border-bottom">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-semibold fs-6" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Formas de Restituição de Valores
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionPoliticas">
+                        <div class="accordion-body text-muted">
+                            <ul class="mb-0 ps-3">
+                                <li class="mb-2"><strong>Cartão de Crédito:</strong> O estorno será solicitado à
+                                    administradora do cartão e poderá ser visualizado em até 2 faturas subsequentes.
+                                </li>
+                                <li class="mb-2"><strong>Pix ou Boleto Bancário:</strong> O reembolso será efetuado via
+                                    transferência na conta bancária do titular da compra em até 5 dias úteis após a
+                                    conferência do produto.</li>
+                                <li><strong>Cupom de Crédito:</strong> Você também pode optar por um vale-compras para
+                                    utilizar em novos pedidos na loja com validade de 12 meses.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-semibold fs-6" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Produto Avariado no Transporte
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionPoliticas">
+                        <div class="accordion-body text-muted">
+                            Se a embalagem estiver aberta ou avariada no momento da entrega, recuse o recebimento e
+                            anote o motivo no conhecimento de transporte. Se notar a avaria após o recebimento, entre em
+                            contato conosco em até 48 horas para realizarmos a substituição imediata sem custos.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA de Suporte -->
+        <section class="bg-white p-5 rounded-4 shadow-sm text-center my-5 border">
+            <h3 class="fw-bold mb-2">Ainda tem dúvidas sobre sua troca?</h3>
+            <p class="text-muted mb-4">Nossa equipe de suporte está pronta para te ajudar a solucionar qualquer questão.
+            </p>
+            <a href="contato.html" class="btn btn-brand-primary px-4 py-2">Falar com o Suporte</a>
+        </section>
+
+    </main>
+
+    <!-- Footer Bootstrap -->
+    <footer class="footer-brand pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Coluna 1: Contato -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-1">E-mail: contato@empresa.com</p>
+                    <p class="mb-1">Telefone: (11) 99999-9999</p>
+                    <p class="mb-0">Endereço: Av. Principal, 100 - São Paulo, SP</p>
+                </div>
+
+                <!-- Coluna 2: Links Institucionais -->
+                <div class="col-md-4 text-md-center">
+                    <h5 class="fw-bold mb-3">Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="politica_privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos_uso.html">Termos de Uso</a></li>
+                        <li><a href="sobrenos.html">Quem Somos</a></li>
+                        <li><a href="trocas_devolucoes.html">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Redes Sociais -->
+                <div class="col-md-4 text-md-end">
+                    <h5 class="fw-bold mb-3">Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://linkedin.com/in/jonatas-ferreira-011aa526" target="_blank"
+                                rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-light opacity-25">
+            <div class="text-center">
+                <small>&copy; 2026 Store Beautiful. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

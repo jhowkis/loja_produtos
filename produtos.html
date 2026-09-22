@@ -4,136 +4,543 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Produtos</title>
+    <title>Store Beautiful - Início</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS de Cores, Tipografia e Estilos Customizados -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <a href="#">
-            <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logotipo da Empresa">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logótipo e Nome da Loja -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logótipo da Empresa" height="40"
+                    class="me-2">
+                <span class="fw-bold text-white">Store Beautiful</span>
+            </a>
 
-    <main>
-        <h2>Catálogo de Produtos</h2>
+            <!-- Botão Menu Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <section id="Produto01">
-            <article>
-                <h3>Produto 1</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto1.jpg" alt="Imagem do Produto 1" loading="lazy">
-                    <figcaption>
-                        Perfume de alta qualidade com fragrância duradoura.
-                    </figcaption>
-                </figure>
-                <p>Preço: R$ 99,90</p>
-                <button onclick="meuModal.showModal()">
-                    Comprar
-                </button>
-            </article>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <!-- Menu do Lado Esquerdo (com a guia Produtos) -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
 
-            <article id="Produto02">
-                <h3>Produto 2</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto2.jpg" alt="Imagem do Produto 2" loading="lazy">
-                    <figcaption>
-                        Maquiagem de alta qualidade com acabamento duradouro
-                    </figcaption>
-                </figure>
-                <p>Preço: R$ 39,90</p>
-                <button onclick="meuModal.showModal()">
-                    Comprar
-                </button>
-            </article>
+                <!-- Menu do Lado Direito -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quero Me Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrar</a>
+                    </li>
+                    <!-- Ícone do Carrinho com Badge perfeitamente colada -->
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link d-inline-flex align-items-center" href="#" aria-label="Carrinho de Compras">
+                            <div class="cart-icon-wrapper">
+                                <i class="bi bi-cart3 fs-4"></i>
+                                <span class="cart-badge">5</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <article id="Produto03">
-                <h3>Produto 3</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto3.jpg" alt="Imagem do Produto 3" loading="lazy">
-                    <figcaption>
-                        Perfume tropical com fragrância intensa.
-                    </figcaption>
-                </figure>
-                <p>Preço: R$ 79,90</p>
-                <button onclick="meuModal.showModal()">
-                    Comprar
-                </button>
-            </article>
+    <!-- Conteúdo Principal - Produtos -->
+    <main class="container my-5">
 
-            <article id="Produto04">
-                <h3>Produto 4</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto4.jpg" alt="Imagem do Produto 4" loading="lazy">
-                    <figcaption>
-                        Perfume amadeirado com notas sofisticadas.
-                    </figcaption>
-                </figure>
-                <p>Preço: R$ 89,90</p>
-                <button onclick="meuModal.showModal()">
-                    Comprar
-                </button>
-            </article>
-
-            <article id="Produto05">
-                <h3>Produto 5</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto5.jpg" alt="Imagem do Produto 5" loading="lazy">
-                    <figcaption>
-                        Loção corporal hidratante com aroma suave e refrescante.
-                    </figcaption>
-                </figure>
-                <p>Preço: R$ 69,90</p>
-                <button onclick="meuModal.showModal()">
-                    Comprar
-                </button>
-            </article>
-
-
+        <!-- Banner de Apresentação / Hero -->
+        <section class="hero-section text-center p-5 rounded-4 shadow mb-5">
+            <h1 class="display-4 fw-bold">Nosso Catálogo Exclusivo</h1>
+            <p class="lead my-3 fs-5">
+                Explore nossa coleção de fragrâncias, maquiagens e produtos de skincare cuidadosamente selecionados.
+            </p>
         </section>
 
-        <dialog id="meuModal">
-            <h3>Em construção</h3>
-            <p>Aguarde as aulas de PHP e JavaScript</p>
+        <!-- Grelha de Produtos (20 itens com Paginação) -->
+        <section class="my-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4" id="products-grid">
 
-            <!-- Formulário fecha o modal sem JS -->
-            <form method="dialog">
-                <button>Fechar</button>
-            </form>
-        </dialog>
+                <!-- Produto 01 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto1.jpg" class="card-img-top object-fit-cover"
+                            alt="Perfume Pub Revlon Vintage" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Perfumaria</span>
+                            <h3 class="card-title h6 fw-bold">Perfume Pub Cologne</h3>
+                            <p class="card-text text-muted small flex-grow-1">Fragrância vintage clássica com notas
+                                amadeiradas e quentes.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 199,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 02 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto2.jpg" class="card-img-top object-fit-cover"
+                            alt="Kit de Pincéis e Pó Compacto" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Acessórios</span>
+                            <h3 class="card-title h6 fw-bold">Kit Pincéis & Pó Sun</h3>
+                            <p class="card-text text-muted small flex-grow-1">Conjunto de pincéis kabuki e pó iluminador
+                                com acabamento radiante.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 89,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 03 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto3.jpg" class="card-img-top object-fit-cover"
+                            alt="Perfume Flora Rose Elegance" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Perfumaria</span>
+                            <h3 class="card-title h6 fw-bold">Perfume Rose Elegance</h3>
+                            <p class="card-text text-muted small flex-grow-1">Frasco lapidado com aroma sofisticado de
+                                pétalas de rosa e peônias.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 249,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 04 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto4.jpg" class="card-img-top object-fit-cover"
+                            alt="Perfume Boudoir Vintage Pump" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Perfumaria</span>
+                            <h3 class="card-title h6 fw-bold">Perfume Boudoir Vintage</h3>
+                            <p class="card-text text-muted small flex-grow-1">Colónia clássica com borrifador em pêra e
+                                essência âmbar exclusiva.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 289,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 05 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto5.jpg" class="card-img-top object-fit-cover"
+                            alt="Creme Hidratante Facial Velvet" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Skincare</span>
+                            <h3 class="card-title h6 fw-bold">Creme Facial Velvet</h3>
+                            <p class="card-text text-muted small flex-grow-1">Fórmula ultra-nutritiva em pote para
+                                hidratação e firmeza prolongada.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 119,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 06 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto6.jpg" class="card-img-top object-fit-cover"
+                            alt="Kit Camarim Batom e Espelho" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Kit Camarim Red</h3>
+                            <p class="card-text text-muted small flex-grow-1">Batom vermelho intenso, pó facial com
+                                pincel e espelho de bancada.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 149,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 07 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto7.jpg" class="card-img-top object-fit-cover"
+                            alt="Trio de Bases e Pincel de Maquiagem" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Trio de Bases & Pincel</h3>
+                            <p class="card-text text-muted small flex-grow-1">Três bisnagas de base fluida com cobertura
+                                ajustável e pincel de precisão.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 139,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 08 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto8.jpg" class="card-img-top object-fit-cover"
+                            alt="Batom Lápis Matte Velvet" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Batom Lápis Matte</h3>
+                            <p class="card-text text-muted small flex-grow-1">Alta pigmentação em bastão com acabamento
+                                aveludado e fixação prolongada.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 45,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 09 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto9.jpg" class="card-img-top object-fit-cover"
+                            alt="Paleta de Sombras Coloridas com Pincéis" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Paleta Sombras & Pincéis</h3>
+                            <p class="card-text text-muted small flex-grow-1">Múltiplas tonalidades cintilantes e opacas
+                                acompanhadas de pincéis variados.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 169,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 10 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto10.jpg" class="card-img-top object-fit-cover"
+                            alt="Kit Pele Impecável Nude" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Kit Pele Perfeita Nude</h3>
+                            <p class="card-text text-muted small flex-grow-1">Base fluida com dosador, corretivo stick e
+                                pó compacto com espelho.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 179,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 11 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto1.jpg" class="card-img-top object-fit-cover"
+                            alt="Colônia Amadeirada Golden Pub" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Perfumaria</span>
+                            <h3 class="card-title h6 fw-bold">Colônia Golden Pub</h3>
+                            <p class="card-text text-muted small flex-grow-1">Essência marcante com notas de fundo
+                                amadeiradas e toque especiado.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 185,00</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 12 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto2.jpg" class="card-img-top object-fit-cover"
+                            alt="Conjunto Pincéis Kabuki Pro" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Acessórios</span>
+                            <h3 class="card-title h6 fw-bold">Pincéis Kabuki Pro</h3>
+                            <p class="card-text text-muted small flex-grow-1">Cerdas densas e macias para aplicação
+                                uniforme de maquiagem em pó.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 94,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 13 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto3.jpg" class="card-img-top object-fit-cover"
+                            alt="Perfume Rose Crystal Eau de Parfum" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Perfumaria</span>
+                            <h3 class="card-title h6 fw-bold">Rose Crystal EDP</h3>
+                            <p class="card-text text-muted small flex-grow-1">Aroma floral frutado envolvente em frasco
+                                de vidro translúcido.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 235,00</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 14 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto4.jpg" class="card-img-top object-fit-cover"
+                            alt="Perfume Classic Atomizer Reserve" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Perfumaria</span>
+                            <h3 class="card-title h6 fw-bold">Classic Atomizer Reserve</h3>
+                            <p class="card-text text-muted small flex-grow-1">Edição especial com frasco artesanal e
+                                borrifador têxtil luxuoso.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 299,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 15 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto5.jpg" class="card-img-top object-fit-cover"
+                            alt="Máscara Noturna Nutritiva" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Skincare</span>
+                            <h3 class="card-title h6 fw-bold">Máscara Facial Noturna</h3>
+                            <p class="card-text text-muted small flex-grow-1">Creme concentrado para renovação e
+                                nutrição profunda da pele durante o sono.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 125,00</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 16 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto6.jpg" class="card-img-top object-fit-cover"
+                            alt="Set Toucador Batom e Pó" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Set Toucador Classic</h3>
+                            <p class="card-text text-muted small flex-grow-1">Acessórios essenciais para retoque rápido
+                                com batom e pó compacto.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 159,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 17 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto7.jpg" class="card-img-top object-fit-cover"
+                            alt="Kit Primers e Uniformizadores" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Skincare</span>
+                            <h3 class="card-title h6 fw-bold">Kit Primers Smooth</h3>
+                            <p class="card-text text-muted small flex-grow-1">Conjunto de primers preparadores em
+                                bisnaga para suavizar poros e linhas.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 129,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 18 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto8.jpg" class="card-img-top object-fit-cover"
+                            alt="Duo Batom Lápis Terracota" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Duo Batom Lápis Terracota</h3>
+                            <p class="card-text text-muted small flex-grow-1">Cores quentes e modernas com aplicação
+                                precisa e secagem matte confortável.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 52,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 19 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto9.jpg" class="card-img-top object-fit-cover"
+                            alt="Paleta de Sombras Studio Pro" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Paleta Studio Pro</h3>
+                            <p class="card-text text-muted small flex-grow-1">Gama completa de sombras para maquiagens
+                                de festa e do dia a dia.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 155,00</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 20 -->
+                <div class="col product-item">
+                    <div class="card h-100 card-product shadow-sm">
+                        <img src="./assets/images/produtos/produto10.jpg" class="card-img-top object-fit-cover"
+                            alt="Set Maquiagem Nude Glow" style="height: 180px;">
+                        <div class="card-body d-flex flex-column p-3">
+                            <span class="badge bg-secondary mb-2 align-self-start">Maquiagem</span>
+                            <h3 class="card-title h6 fw-bold">Set Nude Glow Essentials</h3>
+                            <p class="card-text text-muted small flex-grow-1">Combo de maquiagem para iluminação e
+                                acabamento natural minimalista.</p>
+                            <p class="fw-bold fs-5 text-primary mb-2">R$ 189,90</p>
+                            <button class="btn btn-brand-primary btn-sm w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Paginação Bootstrap -->
+            <nav aria-label="Navegação do catálogo" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" id="prev-page">
+                        <a class="page-link" href="#" aria-label="Anterior">
+                            <span aria-hidden="true">&laquo; Anterior</span>
+                        </a>
+                    </li>
+                    <li class="page-item active" data-page="1"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item" data-page="2"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item" id="next-page">
+                        <a class="page-link" href="#" aria-label="Próximo">
+                            <span aria-hidden="true">Próximo &raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
 
     </main>
 
-    <!-- 5. Rodapé -->
-    <footer id="contato">
-        <div>
-            <h3>Contato</h3>
-            <p>E-mail: contato@empresa.com</p>
-            <p>Telefone: (11) 99999-9999</p>
-            <p>Endereço: Av. Principal, 100 - São Paulo, SP</p>
-        </div>
+    <!-- Footer Bootstrap -->
+    <footer class="footer-brand pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Coluna 1: Contato -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-1">E-mail: contato@empresa.com</p>
+                    <p class="mb-1">Telefone: (11) 99999-9999</p>
+                    <p class="mb-0">Endereço: Av. Principal, 100 - São Paulo, SP</p>
+                </div>
 
-        <div>
-            <h3>Redes Sociais</h3>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="https://linkedin.com/in/jonatas-ferreira-011aa526">LinkedIn</a></li>
-            </ul>
-        </div>
+                <!-- Coluna 2: Links Institucionais -->
+                <div class="col-md-4 text-md-center">
+                    <h5 class="fw-bold mb-3">Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="politica_privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos_uso.html">Termos de Uso</a></li>
+                        <li><a href="sobrenos.html">Quem Somos</a></li>
+                        <li><a href="trocas_devolucoes.html">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
 
-        <p>&copy; 2026 Store Beautiful. Todos os direitos reservados.</p>
+                <!-- Coluna 3: Redes Sociais -->
+                <div class="col-md-4 text-md-end">
+                    <h5 class="fw-bold mb-3">Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://linkedin.com/in/jonatas-ferreira-011aa526" target="_blank"
+                                rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-light opacity-25">
+            <div class="text-center">
+                <small>&copy; 2026 Store Beautiful. Todos os direitos reservados.</small>
+            </div>
+        </div>
     </footer>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Script da Paginação DInâmica (10 produtos por ecrã) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const itemsPerPage = 10;
+            const products = document.querySelectorAll('.product-item');
+            const pageLinks = document.querySelectorAll('.pagination .page-item[data-page]');
+            const prevBtn = document.getElementById('prev-page');
+            const nextBtn = document.getElementById('next-page');
+            let currentPage = 1;
+            const totalPages = Math.ceil(products.length / itemsPerPage);
+
+            function displayPage(page) {
+                currentPage = page;
+
+                // Mostra apenas os produtos da página ativa
+                products.forEach((product, index) => {
+                    const start = (page - 1) * itemsPerPage;
+                    const end = page * itemsPerPage;
+                    if (index >= start && index < end) {
+                        product.classList.remove('d-none');
+                    } else {
+                        product.classList.add('d-none');
+                    }
+                });
+
+                // Atualiza classe 'active' nos botões de número
+                pageLinks.forEach(link => {
+                    const pageNum = parseInt(link.getAttribute('data-page'));
+                    if (pageNum === currentPage) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+
+                // Ativa/desativa botões de Anterior e Próximo
+                if (prevBtn) prevBtn.classList.toggle('disabled', currentPage === 1);
+                if (nextBtn) nextBtn.classList.toggle('disabled', currentPage === totalPages);
+
+                // Rola para o topo do catálogo suavemente ao mudar de página
+                document.getElementById('products-grid').scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Inicializa mostrando a Página 1
+            displayPage(1);
+
+            // Clique nos números das páginas
+            pageLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const pageNum = parseInt(this.getAttribute('data-page'));
+                    displayPage(pageNum);
+                });
+            });
+
+            // Clique no botão Anterior
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (currentPage > 1) displayPage(currentPage - 1);
+                });
+            }
+
+            // Clique no botão Próximo
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (currentPage < totalPages) displayPage(currentPage + 1);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

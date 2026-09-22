@@ -4,115 +4,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful</title>
+    <title>Store Beautiful - Início</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS de Cores, Tipografia e Estilos Customizados -->
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
 
-    <!-- 1. Cabeçalho -->
-    <header>
-        <a href="#">
-            <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logotipo da Empresa">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logótipo e Nome da Loja -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logótipo da Empresa" height="40"
+                    class="me-2">
+                <span class="fw-bold text-white">Store Beautiful</span>
+            </a>
 
-    <main>
-        <!-- 2. Banner Promocional -->
-        <section id="inicio">
-            <h1>Oferta Especial de Lançamento</h1>
-            <p>Aproveite até 40% de desconto em nossa nova linha de produtos. Promoção por tempo limitado!</p>
-            <a href="#produtos">Ver Oferta</a>
+            <!-- Botão Menu Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <!-- Menu do Lado Esquerdo (com a guia Produtos) -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Menu do Lado Direito -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quero Me Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrar</a>
+                    </li>
+                    <!-- Ícone do Carrinho com Badge perfeitamente colada -->
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link d-inline-flex align-items-center" href="#" aria-label="Carrinho de Compras">
+                            <div class="cart-icon-wrapper">
+                                <i class="bi bi-cart3 fs-4"></i>
+                                <span class="cart-badge">5</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal - Página Inicial -->
+    <main class="container my-5">
+
+        <!-- Banner de Apresentação / Hero Elegante -->
+        <section class="hero-section text-center p-5 rounded-5 shadow-sm mb-5 position-relative overflow-hidden">
+            <div class="row justify-content-center py-3">
+                <div class="col-lg-9">
+                    <span class="badge rounded-pill hero-badge px-3 py-2 text-uppercase mb-3 fw-semibold">
+                        Edição Exclusiva
+                    </span>
+                    <h1 class="display-4 mb-3">
+                        Oferta Especial de Lançamento
+                    </h1>
+                    <p class="lead mb-4 opacity-90 fw-light">
+                        Aproveite até <strong>40% de desconto</strong> na nossa nova linha de fragrâncias e cosméticos.
+                        Promoção por tempo limitado.
+                    </p>
+                    <a href="produtos.html" class="btn btn-hero-offer rounded-pill fs-6">
+                        Explorar Ofertas <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <!-- 3. Sobre Nós -->
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Nossa empresa é dedicada a oferecer soluções inovadoras com foco em qualidade e excelência no atendimento
-                ao cliente.</p>
-
-            <h3>Nossos Valores</h3>
-            <ul>
-                <li><strong>Inovação:</strong> Buscar constantemente a evolução.</li>
-                <li><strong>Qualidade:</strong> Entregar o melhor em cada detalhe.</li>
-                <li><strong>Compromisso:</strong> Respeito e transparência com nossos clientes.</li>
-            </ul>
+        <!-- Mensagem de Boas-Vindas Revisitada -->
+        <section class="text-center my-5 py-2">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="h3 fw-bold mb-3">
+                        Bem-vindo à Store Beautiful
+                    </h2>
+                    <p class="text-muted leading-relaxed mb-4">
+                        Dedicamo-nos a oferecer soluções de beleza delicadas e inovadoras, com foco absoluto na
+                        qualidade, bem-estar e sofisticação dos seus rituais diários.
+                    </p>
+                    <a href="sobre.html" class="btn btn-outline-secondary btn-sm rounded-pill px-4">
+                        Conheça A Nossa História
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <!-- 4. Produtos em Destaque -->
-        <section id="produtos">
-            <h2>Produtos em Destaque</h2>
+        <hr class="my-5 opacity-10">
 
-            <article>
-                <h3>Produto Alfa</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto1.jpg" alt="Imagem do Produto 1" loading="lazy">
-                    <figcaption>
-                        Perfume de alta qualidade com fragrância duradoura.</p>
-                    </figcaption>
-                </figure>
-                <a href="produtos.html#Produto01">Comprar</a>
+        <!-- Produtos em Destaque (Carrossel Dinâmico) -->
+        <section class="my-5 position-relative">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="h3 fw-bold mb-1">Produtos em Destaque</h2>
+                    <p class="text-muted small mb-0">As peças mais amadas da nossa coleção</p>
+                </div>
 
-            </article>
+                <!-- Controlo Manual do Carrossel (Botões Superiores) -->
+                <div class="d-flex gap-2">
+                    <button
+                        class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center"
+                        type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev"
+                        style="width: 38px; height: 38px;" aria-label="Anterior">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button
+                        class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center"
+                        type="button" data-bs-target="#carouselDestaques" data-bs-slide="next"
+                        style="width: 38px; height: 38px;" aria-label="Próximo">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
 
-            <article>
-                <h3>Produto Beta</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto2.jpg" alt="Imagem do Produto 2" loading="lazy">
-                    <figcaption>
-                        Maquiagem de alta qualidade com acabamento duradouro.</p>
-                    </figcaption>
-                </figure>
-                <a href="produtos.html#Produto02">Comprar</a>
+            <!-- Carrossel Bootstrap -->
+            <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner pb-4">
 
-            </article>
+                    <!-- SLIDE 1 (3 Produtos) -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
 
-            <article>
-                <h3>Produto Gama</h3>
-                <figure>
-                    <img src="./assets/images/produtos/produto3.jpg" alt="Imagem do Produto 3" loading="lazy">
-                    <figcaption>
-                        Perfume tropical com fragrância intensa.</p>
-                    </figcaption>
-                </figure>
-                <a href="produtos.html#Produto03">Comprar</a>
+                            <div class="col">
+                                <div class="card h-100 border-0 card-product hover-lift">
+                                    <div class="position-relative overflow-hidden rounded-top-4">
+                                        <img src="./assets/images/produtos/produto1.jpg"
+                                            class="card-img-top object-fit-cover" alt="Perfume Pub Cologne"
+                                            style="height: 230px;">
+                                        <span
+                                            class="badge bg-white text-dark position-absolute top-0 end-0 m-3 shadow-sm rounded-pill px-3 py-2 small">Perfumaria</span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <h3 class="card-title h6 fw-bold mb-2">Perfume Pub Cologne</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Fragrância vintage clássica
+                                            com notas amadeiradas e quentes.</p>
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <span class="fw-bold fs-5 text-primary">R$ 199,90</span>
+                                            <button
+                                                class="btn btn-brand-primary btn-sm rounded-pill px-3">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            </article>
+                            <div class="col">
+                                <div class="card h-100 border-0 card-product hover-lift">
+                                    <div class="position-relative overflow-hidden rounded-top-4">
+                                        <img src="./assets/images/produtos/produto3.jpg"
+                                            class="card-img-top object-fit-cover" alt="Perfume Rose Elegance"
+                                            style="height: 230px;">
+                                        <span
+                                            class="badge bg-white text-dark position-absolute top-0 end-0 m-3 shadow-sm rounded-pill px-3 py-2 small">Perfumaria</span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <h3 class="card-title h6 fw-bold mb-2">Perfume Rose Elegance</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Frasco lapidado com aroma
+                                            sofisticado de pétalas de rosa e peônias.</p>
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <span class="fw-bold fs-5 text-primary">R$ 249,90</span>
+                                            <button
+                                                class="btn btn-brand-primary btn-sm rounded-pill px-3">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col">
+                                <div class="card h-100 border-0 card-product hover-lift">
+                                    <div class="position-relative overflow-hidden rounded-top-4">
+                                        <img src="./assets/images/produtos/produto4.jpg"
+                                            class="card-img-top object-fit-cover" alt="Perfume Boudoir Vintage"
+                                            style="height: 230px;">
+                                        <span
+                                            class="badge bg-white text-dark position-absolute top-0 end-0 m-3 shadow-sm rounded-pill px-3 py-2 small">Perfumaria</span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <h3 class="card-title h6 fw-bold mb-2">Perfume Boudoir Vintage</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Colónia clássica com
+                                            borrifador em pêra e essência âmbar exclusiva.</p>
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <span class="fw-bold fs-5 text-primary">R$ 289,90</span>
+                                            <button
+                                                class="btn btn-brand-primary btn-sm rounded-pill px-3">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 (Mais 3 Produtos) -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                            <div class="col">
+                                <div class="card h-100 border-0 card-product hover-lift">
+                                    <div class="position-relative overflow-hidden rounded-top-4">
+                                        <img src="./assets/images/produtos/produto2.jpg"
+                                            class="card-img-top object-fit-cover" alt="Kit Pincéis & Pó Sun"
+                                            style="height: 230px;">
+                                        <span
+                                            class="badge bg-white text-dark position-absolute top-0 end-0 m-3 shadow-sm rounded-pill px-3 py-2 small">Acessórios</span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <h3 class="card-title h6 fw-bold mb-2">Kit Pincéis & Pó Sun</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Conjunto de pincéis kabuki e
+                                            pó iluminador com acabamento radiante.</p>
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <span class="fw-bold fs-5 text-primary">R$ 89,90</span>
+                                            <button
+                                                class="btn btn-brand-primary btn-sm rounded-pill px-3">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 card-product hover-lift">
+                                    <div class="position-relative overflow-hidden rounded-top-4">
+                                        <img src="./assets/images/produtos/produto5.jpg"
+                                            class="card-img-top object-fit-cover" alt="Creme Facial Velvet"
+                                            style="height: 230px;">
+                                        <span
+                                            class="badge bg-white text-dark position-absolute top-0 end-0 m-3 shadow-sm rounded-pill px-3 py-2 small">Skincare</span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <h3 class="card-title h6 fw-bold mb-2">Creme Facial Velvet</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Fórmula ultra-nutritiva em
+                                            pote para hidratação e firmeza prolongada.</p>
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <span class="fw-bold fs-5 text-primary">R$ 119,90</span>
+                                            <button
+                                                class="btn btn-brand-primary btn-sm rounded-pill px-3">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 card-product hover-lift">
+                                    <div class="position-relative overflow-hidden rounded-top-4">
+                                        <img src="./assets/images/produtos/produto6.jpg"
+                                            class="card-img-top object-fit-cover" alt="Kit Camarim Red"
+                                            style="height: 230px;">
+                                        <span
+                                            class="badge bg-white text-dark position-absolute top-0 end-0 m-3 shadow-sm rounded-pill px-3 py-2 small">Maquiagem</span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <h3 class="card-title h6 fw-bold mb-2">Kit Camarim Red</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Batom vermelho intenso, pó
+                                            facial com pincel e espelho de bancada.</p>
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <span class="fw-bold fs-5 text-primary">R$ 149,90</span>
+                                            <button
+                                                class="btn btn-brand-primary btn-sm rounded-pill px-3">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Indicadores Inferiores -->
+                <div class="carousel-indicators position-relative mt-3 mb-0">
+                    <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <!-- 5. Rodapé -->
-    <footer id="contato">
-        <div>
-            <h3>Contato</h3>
-            <p>E-mail: contato@empresa.com</p>
-            <p>Telefone: (11) 99999-9999</p>
-            <p>Endereço: Av. Principal, 100 - São Paulo, SP</p>
-        </div>
+    <!-- Footer Bootstrap -->
+    <footer class="footer-brand pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Coluna 1: Contato -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-1">E-mail: contato@empresa.com</p>
+                    <p class="mb-1">Telefone: (11) 99999-9999</p>
+                    <p class="mb-0">Endereço: Av. Principal, 100 - São Paulo, SP</p>
+                </div>
 
-        <div>
-            <h3>Redes Sociais</h3>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="https://linkedin.com/in/jonatas-ferreira-011aa526">LinkedIn</a></li>
-            </ul>
-        </div>
+                <!-- Coluna 2: Links Institucionais -->
+                <div class="col-md-4 text-md-center">
+                    <h5 class="fw-bold mb-3">Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="politica_privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos_uso.html">Termos de Uso</a></li>
+                        <li><a href="sobrenos.html">Quem Somos</a></li>
+                        <li><a href="trocas_devolucoes.html">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
 
-        <p>&copy; 2026 Store Beautiful. Todos os direitos reservados.</p>
+                <!-- Coluna 3: Redes Sociais -->
+                <div class="col-md-4 text-md-end">
+                    <h5 class="fw-bold mb-3">Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://linkedin.com/in/jonatas-ferreira-011aa526" target="_blank"
+                                rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-light opacity-25">
+            <div class="text-center">
+                <small>&copy; 2026 Store Beautiful. Todos os direitos reservados.</small>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Beautiful - Início</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS de Cores, Tipografia e Estilos Customizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logótipo e Nome da Loja -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/favicon/web-app-manifest-192x192.png" alt="Logótipo da Empresa" height="40"
+                    class="me-2">
+                <span class="fw-bold text-white">Store Beautiful</span>
+            </a>
+
+            <!-- Botão Menu Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <!-- Menu do Lado Esquerdo (com a guia Produtos) -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Menu do Lado Direito -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quero Me Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrar</a>
+                    </li>
+                    <!-- Ícone do Carrinho com Badge perfeitamente colada -->
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link d-inline-flex align-items-center" href="#" aria-label="Carrinho de Compras">
+                            <div class="cart-icon-wrapper">
+                                <i class="bi bi-cart3 fs-4"></i>
+                                <span class="cart-badge">5</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal - Política de Privacidade -->
+    <main class="container my-5">
+
+        <!-- Banner de Apresentação / Hero -->
+        <section class="hero-section text-center p-5 rounded-4 shadow mb-5">
+            <h1 class="display-4 fw-bold">Política de Privacidade</h1>
+            <p class="lead my-3 fs-5">
+                A sua privacidade é fundamental para nós. Saiba como recolhemos, utilizamos e protegemos os seus dados
+                pessoais com total transparência.
+            </p>
+        </section>
+
+        <!-- Destaques / Princípios de Privacidade -->
+        <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+                    <div class="fs-1 text-primary mb-3">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Segurança Garantida</h3>
+                    <p class="text-muted mb-0">Utilizamos encriptação SSL e protocolos avançados para proteger todas as
+                        suas informações pessoais e de pagamento.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+                    <div class="fs-1 text-primary mb-3">
+                        <i class="bi bi-eye-slash"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Transparência Total</h3>
+                    <p class="text-muted mb-0">Não vendemos nem partilhamos os seus dados pessoais com terceiros para
+                        fins publicitários sem o seu consentimento.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+                    <div class="fs-1 text-primary mb-3">
+                        <i class="bi bi-person-check"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Controlo dos Seus Dados</h3>
+                    <p class="text-muted mb-0">Pode solicitar o acesso, a correção ou a eliminação dos seus dados da
+                        nossa base de dados a qualquer momento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tópicos Detalhados da Política (Accordion) -->
+        <section class="my-5">
+            <h2 class="text-center fw-bold mb-4">Termos da Nossa Política</h2>
+            <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionPrivacidade">
+
+                <div class="accordion-item border-0 border-bottom">
+                    <h3 class="accordion-header" id="headingPrivUm">
+                        <button class="accordion-button fw-semibold fs-6" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsePrivUm" aria-expanded="true" aria-controls="collapsePrivUm">
+                            1. Que Informações Recolhemos?
+                        </button>
+                    </h3>
+                    <div id="collapsePrivUm" class="accordion-collapse collapse show" aria-labelledby="headingPrivUm"
+                        data-bs-parent="#accordionPrivacidade">
+                        <div class="accordion-body text-muted">
+                            Recolhemos as informações necessárias para processar as suas encomendas e proporcionar a
+                            melhor experiência de compra:
+                            <ul class="mt-2 mb-0 ps-3">
+                                <li class="mb-1"><strong>Dados de Cadastro:</strong> Nome completo, CPF, e-mail,
+                                    telefone e data de nascimento.</li>
+                                <li class="mb-1"><strong>Dados de Entrega:</strong> Endereço completo de envio e
+                                    faturação.</li>
+                                <li class="mb-1"><strong>Dados Financeiros:</strong> Informações de cartão ou Pix
+                                    processadas de forma encriptada através de gateways de pagamento seguros.</li>
+                                <li><strong>Dados de Navegação:</strong> Endereço IP, tipo de navegador, páginas
+                                    visitadas e cookies de sessão.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0 border-bottom">
+                    <h3 class="accordion-header" id="headingPrivDois">
+                        <button class="accordion-button collapsed fw-semibold fs-6" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePrivDois" aria-expanded="false"
+                            aria-controls="collapsePrivDois">
+                            2. Como Utilizamos as Suas Informações?
+                        </button>
+                    </h3>
+                    <div id="collapsePrivDois" class="accordion-collapse collapse" aria-labelledby="headingPrivDois"
+                        data-bs-parent="#accordionPrivacidade">
+                        <div class="accordion-body text-muted">
+                            Os seus dados pessoais são utilizados exclusivamente para as seguintes finalidades:
+                            <ul class="mt-2 mb-0 ps-3">
+                                <li class="mb-1">Processar, enviar e acompanhar o estado das suas encomendas.</li>
+                                <li class="mb-1">Emitir notas fiscais e cumprir obrigações legais e tributárias.</li>
+                                <li class="mb-1">Oferecer suporte ao cliente, esclarecer dúvidas e gerir trocas ou
+                                    devoluções.</li>
+                                <li>Enviar novidades, promoções e ofertas exclusivas (apenas se tiver autorizado a nossa
+                                    newsletter).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0 border-bottom">
+                    <h3 class="accordion-header" id="headingPrivTres">
+                        <button class="accordion-button collapsed fw-semibold fs-6" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePrivTres" aria-expanded="false"
+                            aria-controls="collapsePrivTres">
+                            3. Utilização de Cookies
+                        </button>
+                    </h3>
+                    <div id="collapsePrivTres" class="accordion-collapse collapse" aria-labelledby="headingPrivTres"
+                        data-bs-parent="#accordionPrivacidade">
+                        <div class="accordion-body text-muted">
+                            Utilizamos cookies para guardar os itens no seu carrinho de compras, personalizar a sua
+                            navegação e analisar a performance do site. Pode gerir ou desativar os cookies diretamente
+                            nas definições do seu navegador a qualquer momento.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0 border-bottom">
+                    <h3 class="accordion-header" id="headingPrivQuatro">
+                        <button class="accordion-button collapsed fw-semibold fs-6" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePrivQuatro" aria-expanded="false"
+                            aria-controls="collapsePrivQuatro">
+                            4. Partilha de Dados com Terceiros
+                        </button>
+                    </h3>
+                    <div id="collapsePrivQuatro" class="accordion-collapse collapse" aria-labelledby="headingPrivQuatro"
+                        data-bs-parent="#accordionPrivacidade">
+                        <div class="accordion-body text-muted">
+                            A <strong>Store Beautiful</strong> partilha dados apenas com parceiros essenciais para a
+                            operação da loja, tais como: transportadoras parceiras (para entrega de produtos),
+                            intermediadores de pagamento seguros e plataformas de gestão fiscal.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-0">
+                    <h3 class="accordion-header" id="headingPrivCinco">
+                        <button class="accordion-button collapsed fw-semibold fs-6" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePrivCinco" aria-expanded="false"
+                            aria-controls="collapsePrivCinco">
+                            5. Seus Direitos e LGPD
+                        </button>
+                    </h3>
+                    <div id="collapsePrivCinco" class="accordion-collapse collapse" aria-labelledby="headingPrivCinco"
+                        data-bs-parent="#accordionPrivacidade">
+                        <div class="accordion-body text-muted">
+                            Em conformidade com a Lei Geral de Proteção de Dados (LGPD), tem o direito de solicitar a
+                            confirmação, o acesso, a correção ou a exclusão definitiva dos seus dados pessoais. Para
+                            exercer estes direitos, entre em contacto através do e-mail
+                            <strong>privacidade@empresa.com</strong>.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA de Suporte e Proteção de Dados -->
+        <section class="bg-white p-5 rounded-4 shadow-sm text-center my-5 border">
+            <h3 class="fw-bold mb-2">Dúvidas sobre a proteção dos seus dados?</h3>
+            <p class="text-muted mb-4">A nossa equipa de encarregados de proteção de dados está à disposição para
+                esclarecer qualquer questão.</p>
+            <a href="contato.html" class="btn btn-brand-primary px-4 py-2">Falar Conosco</a>
+        </section>
+
+    </main>
+
+    <!-- Footer Bootstrap -->
+    <footer class="footer-brand pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Coluna 1: Contato -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-1">E-mail: contato@empresa.com</p>
+                    <p class="mb-1">Telefone: (11) 99999-9999</p>
+                    <p class="mb-0">Endereço: Av. Principal, 100 - São Paulo, SP</p>
+                </div>
+
+                <!-- Coluna 2: Links Institucionais -->
+                <div class="col-md-4 text-md-center">
+                    <h5 class="fw-bold mb-3">Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="politica_privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos_uso.html">Termos de Uso</a></li>
+                        <li><a href="sobrenos.html">Quem Somos</a></li>
+                        <li><a href="trocas_devolucoes.html">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Redes Sociais -->
+                <div class="col-md-4 text-md-end">
+                    <h5 class="fw-bold mb-3">Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://linkedin.com/in/jonatas-ferreira-011aa526" target="_blank"
+                                rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-light opacity-25">
+            <div class="text-center">
+                <small>&copy; 2026 Store Beautiful. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
